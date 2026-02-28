@@ -11,7 +11,7 @@ export async function sendEmail (
 ) : Promise<ApiResponse> {
     try {
         await resend.emails.send({
-          from: "onboarding@resend.dev",
+          from: "verify@send.whispr.avinashganore.xyz",
           to: email,
           subject: "Whispr | Verification Code",
           react: EmailTemplate({ username, otp: verifyCode })
